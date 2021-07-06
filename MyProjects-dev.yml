@@ -1,0 +1,26 @@
+server:
+    error:
+        include-exception: true
+        include-stacktrace: always
+        
+    port: 9293
+spring:
+    datasource:
+        password: pgadmin
+        url: jdbc:postgresql://localhost:5432/College?serverTimezone=UTC
+        username: postgres
+    jpa:
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+    servlet:
+        multipart:
+            max-file-size: 15MB
+            max-request-size: 15MB
+    thymeleaf:
+        cache: false
+        prefix: classpath:/templates/pages/
+        templateResolverOrder: 1
+        application:
+           name: MyProjects
