@@ -1,8 +1,7 @@
 server:
     error:
         include-exception: true
-        include-stacktrace: always
-        
+        include-stacktrace: always        
     port: 9293
 spring:
     datasource:
